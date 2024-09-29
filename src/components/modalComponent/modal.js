@@ -45,8 +45,8 @@ const Modal = ({ handleNewDesign, handleModalClose }) => {
             <div className={styles.divider} />
 
             <div className={styles.designs_wrapper}>
-                {designs.map((design) => (
-                    <div className={styles.designs}>
+                {designs.map((design, index) => (
+                    <div key={index} className={styles.designs}>
                         <img src={design}
                             width={'100px'}
                             height='100px' />
