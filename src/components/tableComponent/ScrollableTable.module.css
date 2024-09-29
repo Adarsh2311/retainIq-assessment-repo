@@ -1,0 +1,248 @@
+/* .container {
+    position: relative;
+} */
+
+.title {
+    margin-bottom: 20px;
+}
+
+.tableWrapper {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Fixed "Product Filter" column */
+.fixedTable {
+    width: 40%;
+    /* Fixed width for the "Product Filter" column */
+    border-collapse: collapse;
+    margin-right: 0;
+}
+
+/* .fixed_table_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.fixed_table_body_data {}
+
+.idx_column_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    width: 8vw;
+    height: 160px;
+    border-right: 2px solid #ddd;
+    cursor: grab;
+}
+
+.idx_column_data_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.idx_column_data_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete_state {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show the delete button when hovering over the parent container */
+.idx_column_data_wrapper:hover .delete_state {
+    opacity: 1;
+}
+
+.delete_state svg {
+    cursor: pointer;
+    color: red;
+}
+
+.row_idx {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.product_filter_data {
+    padding: 20px;
+    text-align: center;
+    width: 92vw;
+    height: 160px;
+    border-right: 2px solid #ddd
+}
+
+.scrollableTableWrapper {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    overflow-x: auto;
+    /* Horizontal scroll */
+    white-space: nowrap;
+    flex-grow: 1;
+    width: 60%;
+}
+
+.scrollableTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.th {
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+.td {
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+.addVariantBtn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+.addVariantBtn:hover {
+    background-color: #ffffff;
+}
+
+.variant_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 3px dotted #ddd;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    height: 100%;
+}
+
+.card_design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 3px dotted #ddd;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+}
+
+.design_wrapper {
+    position: relative;
+}
+
+.design {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.td_design {
+    padding: 20px;
+    text-align: center;
+    border-right: 2px solid #ddd;
+    width: 33%;
+    height: 160px;
+}
+
+.badge {
+    border: 1px solid #e6e6ea;
+    border-radius: 5px;
+    padding: 5px;
+    color: #22262f;
+    background-color: #fdffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.filter_badge {
+    color: #17704c;
+    background-color: #ebfff2;
+}
+
+.design_title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #22262f;
+}
+
+.variant_head_text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #5e7184;
+}
+
+
+
+.add_design {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    background: #fdffff;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.design_wrapper:hover .add_design {
+    opacity: 1;
+}
+
+.new_design_add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #22262f;
+    cursor: pointer;
+}
+
+.modal_screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

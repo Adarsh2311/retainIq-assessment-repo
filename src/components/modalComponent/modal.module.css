@@ -1,0 +1,91 @@
+.modal_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #ffff;
+    width: 40vw;
+    height: 60vh;
+    padding: 10px;
+}
+
+.close_btn_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.img_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.search_box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #8584e7;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5e7184;
+    width: 140px;
+}
+
+.divider {
+    width: 100%;
+    border: .5px solid #ddd;
+}
+
+.designs_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    gap: 10px;
+}
+
+.designs {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.insert_design {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    background: #fdffff;
+    padding: 5px;
+    width: fit-content;
+    height: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.designs:hover .insert_design {
+    opacity: 1;
+}
